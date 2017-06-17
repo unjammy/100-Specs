@@ -496,6 +496,21 @@ var favoritePlanet = function(planet){
  *
  */
 
+var Person = function(name, money, age, gender) {
+
+    this.name = name;
+    this.money = money;
+    this.age = age;
+  this.gender = gender;
+  };
+  Person.prototype.spendMoney = function(money){
+    this.money = this.money - money;
+  }
+  Person.prototype.earnMoney = function(money){
+        this.money = this.money + money;
+
+  }
+
 
 /* Step 28
  *
@@ -509,6 +524,14 @@ var favoritePlanet = function(planet){
  *
  */
 
+ var purchaseLaptop = function(laptop){
+  if( laptopCosts.hasOwnProperty(laptop) ){
+    return laptopCosts[laptop].toString();
+  } else {
+    return -1;
+  }
+ }
+
 
 /* Step 29
  *
@@ -521,6 +544,13 @@ var favoritePlanet = function(planet){
  * @return {Bool}
  *
  */
+
+ var canTalkAbout = function(club){
+  if( club === club_name) {
+    return false;
+  }
+  return true;
+ }
 
 
 /* Step 30
@@ -544,6 +574,15 @@ var favoritePlanet = function(planet){
  *
  */
 
+ var Pen = function(color){
+
+  this.color = color;
+
+ }
+
+Pen.prototype.write = function(message){
+    return `${this.color}: ${message}`
+  }
 
 /* Step 31
  *
@@ -572,6 +611,22 @@ var favoritePlanet = function(planet){
  *
  */
 
+var Garden = function(plants){
+  this.plantsTotal = plants;
+  this.isWatered = false;
+}
+
+Garden.prototype.water = function(){
+  this.isWatered = true;
+}
+
+Garden.prototype.grow = function(){
+  if(this.isWatered){
+  this.plantsTotal++;
+  this.isWatered = false;
+  }
+  return false;
+}
 
 /* Step 32
  *
@@ -590,6 +645,17 @@ var favoritePlanet = function(planet){
  *
  */
 
+var SolarSystem = function(){
+  this.planets = [];
+}
+
+SolarSystem.prototype.addPlanet = function(planet){
+  this.planets.push(planet);
+}
+
+SolarSystem.prototype.removePlanet = function(){
+  this.planets.pop();
+}
 
 /* Step 33
  *
@@ -624,6 +690,32 @@ var favoritePlanet = function(planet){
  *
  */
 
+var PrincessLeia = function(name, money, age, gender){
+
+this.isInTrouble = null;
+  Person.call(this, name, money, age, gender);
+}
+
+PrincessLeia.prototype = Object.create(new Person);
+
+PrincessLeia.prototype.shootsGun = function(){
+  this.isInTrouble = false;
+  return "Leia shoots her gun wildly";
+}
+
+PrincessLeia.prototype.getsInTrouble = function(){
+  this.isInTrouble = true;
+  return "Help me Obi-wan Kenobi, you're my only hope";
+}
+
+PrincessLeia.prototype.marries = function(person){
+  if(person === 'Han Solo'){
+    return true;
+  } else if ( person === 'Luke Skywalker') {
+    return 'Gross!';
+  }
+  return false;
+}
 
 /* Step 34
  *
