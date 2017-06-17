@@ -735,7 +735,20 @@ PrincessLeia.prototype.marries = function(person){
  *
  */
 
+ var Stapler = function(color,  papers){
 
+  this.color = color;
+  this.maxPapers = papers;
+
+ }
+
+Stapler.prototype.staplePapers = function(number){
+
+  if(number > this.maxPapers){
+    return false;
+  }
+  return true;
+}
 /* Step 35
  *
  * Define an ES5 class named "Scientist" that extends the Person Class that takes
