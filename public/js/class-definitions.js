@@ -5,6 +5,7 @@
  *
  */
 
+var unicorn = null;
 
 /* Step 2
  *
@@ -13,6 +14,7 @@
  *
  */
 
+var videogame_system = "Atari";
 
 /* Step 3
  *
@@ -20,6 +22,8 @@
  * and assign the value of sahara_animal to "The Addax"
  *
  */
+
+ var sahara_animal = "The Addax";
 
 
 /* Step 4
@@ -30,6 +34,8 @@
  * Capitalize the names.
  */
 
+ planets = ['Mercury', 'Venus', 'Earth','Mars','Jupiter', 'Saturn', 'Uranus', 'Neptune'];
+
 
 /* Step 5
  *
@@ -39,6 +45,8 @@
  *
  */
 
+var galilean_moons = ['io', 'europa', 'ganymede', 'callisto']
+
 
 /* Step 6 φ
  *
@@ -47,6 +55,8 @@
  *
  */
 
+ var golden_ratio = 1.61803398874
+
 
 /* Step 7
  *
@@ -54,6 +64,7 @@
  * and assign the value of earths_water_composition to 0.71
  *
  */
+ var earths_water_composition= 0.71
 
 
 /* Step 8
@@ -62,6 +73,8 @@
  * and assign the value of club_name to "Fight Club"
  *
  */
+
+ var club_name = "Fight Club"
 
 
 /* Step 9
@@ -74,6 +87,7 @@
  *   unknown => undefined
  */
 
+var gender = {female: "female", male: "male", unknown: undefined}
 
 /* Step 10
  *
@@ -88,6 +102,7 @@
  *
  */
 
+var princess_leia = { name: "Leia Organa", money: "890", age: 20, gender: gender.female}
 
 /* Step 11
  *
@@ -100,6 +115,14 @@
  *   jsonformatter.curiousconcept.com => "104.28.5.70"
  *
  */
+
+ var domains = {
+  'ycombinator.com': '198.41.190.47',
+  'laughingsquid.com': "162.159.247.97",
+  'slumlordhosting.com': "198.61.179.126",
+  'jsonformatter.curiousconcept.com': "104.28.5.70"
+
+  }
 
 
 /* Step 12
@@ -116,6 +139,15 @@
  *
  */
 
+
+var browsers = {
+  Chromium: "google.com",
+  Safari: "apple.com",
+  Opera: "opera.com",
+  Firefox: "mozilla.org",
+  Sleipnir: "fenrir-inc.com",
+  Konqueror: "konqueror.org"
+}
 
 /* Step 13
  *
@@ -134,6 +166,19 @@
  *
  */
 
+ var rainbow = {
+  colors: {
+    red: "#F0280A",
+    orange: "#FF8800",
+    yellow: "#FFDD00",
+    green: "#51AB0C",
+    blue: "#1593ED",
+    indigo: "#5215ED",
+    violet: "#A915ED"
+  },
+  isDouble: true
+ }
+
 
 /* Step 14
  *
@@ -149,6 +194,13 @@
  *
  */
 
+var linuxFlavors = ["Gentoo",
+  "Fedora",
+  "Debian",
+  "Slackware",
+  "Red Hat",
+  "Bieber Linux"
+  ]
 
 /* Step 15
  *
@@ -163,6 +215,14 @@
  *
  */
 
+var DNA = [
+
+  "nucleatides",
+  "guanine",
+  "adenine",
+  "thymine",
+  "cytosine"
+]
 
 /* Step 16
  *
@@ -175,6 +235,13 @@
  * Surface      => 320
  *
  */
+
+ laptopCosts = {
+   MacBook  :1500,
+   Alienware   : 2500,
+  HP      : 499,
+ Surface    :320
+ }
 
 
 /* Step 17
@@ -192,6 +259,15 @@
  *
  */
 
+var livingOrganismClassification = [
+  "Kingdom",
+  "Phylum",
+  "Class",
+  "Order",
+  "Family",
+  "Genus",
+  "Species"
+]
 
 /* Step 18
  *
@@ -206,6 +282,13 @@
  *
  */
 
+var scmList = [
+  "git",
+  "svn",
+  "mercurial",
+  "bazaar",
+  "cvs"
+]
 
 /* Step 19
  *
@@ -225,6 +308,20 @@
  *
  */
 
+ var beers = {
+  IPA         :"Ale",
+  Lager      : "Strong",
+  Heffeweisen :"German",
+  Stout    : [
+                   "Thick",
+                   "Dark"],
+  Porter   : "Bitter",
+  Ale       : [
+                   "Light",
+                   "Golden"]
+
+ }
+
 
 /* Step 20
  *
@@ -235,6 +332,7 @@
  *
  */
 
+var sahara_river = function(){return 'Nile River'}
 
 /* Step 21
  *
@@ -247,6 +345,9 @@
  *
  */
 
+var addNumbers = function(number1, number2){
+  return number1 + number2;
+}
 
 /* Step 22
  *
@@ -259,6 +360,13 @@
  * @return {Bool}
  *
  */
+
+ var installLinux = function(linux){
+  if(linuxFlavors.indexOf(linux) !== -1){
+    return true;
+  }
+  return false;
+ }
 
 
 /* Step 23
@@ -279,6 +387,16 @@
  *
  */
 
+  var drink = function(beer){
+  if(beers.hasOwnProperty(beer)){
+    if(beers[beer] instanceof Array ){
+      return `This ${beer} is ${beers[beer][0]} and ${beers[beer][1]}.`;
+    }
+    return `This ${beer} is ${beers[beer]}.`;
+  }
+  return false;
+ }
+
 
 /* Step 24
  *
@@ -293,6 +411,12 @@
  */
 
 
+  var browseURL = function(browser){
+  if(browsers.hasOwnProperty(browser)){
+    return `${browsers[browser]}`;
+  }
+  return false;
+ }
 /* Step 25
  *
  * Define a function named "listLivingOrgClass" that
@@ -302,6 +426,20 @@
  * @return {String}
  *
  */
+
+ var listLivingOrgClass = function(){
+  return `
+<ul>
+  <li>Kingdom</li>
+  <li>Phylum</li>
+  <li>Class</li>
+  <li>Order</li>
+  <li>Family</li>
+  <li>Genus</li>
+  <li>Species</li>
+</ul>`;
+
+ }
 
 
 /* Step 26
@@ -324,6 +462,16 @@
  *
  */
 
+var favoritePlanet = function(planet){
+
+    if(planets.indexOf(planet) !== -1 ){
+      var randomPlanet = Math.floor(Math.random() * planets.length)
+      randomPlanet = planets[randomPlanet]
+
+     return `I'm from ${planets[planets.indexOf(planet)]}, but I wish I could go to ${randomPlanet}.`;
+   }
+  return `${planet} is not a planet!`;
+}
 
 /* Step 27
  *
