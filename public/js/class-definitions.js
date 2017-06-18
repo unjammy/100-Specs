@@ -789,6 +789,48 @@ Stapler.prototype.staplePapers = function(number){
  */
 
 
+var Scientist = function(name, money,  age, gender){
+
+  this.disciplines = [];
+  this.discoveries = [];
+  Person.call(this, name, money, age, gender);
+
+}
+
+Scientist.prototype = Object.create(new Person);
+Scientist.prototype.addDiscipline = function(discipline){
+  this.disciplines.push(discipline);
+  return discipline;
+}
+Scientist.prototype.checkDiscipline = function(discipline){
+  if( this.disciplines.indexOf(discipline) === -1 ){
+    return false;
+  }
+  return true;
+}
+Scientist.prototype.addDiscovery = function(discovery){
+
+  this.discoveries.push(discovery);
+  if(this.discoveries.length === 1){
+    return `I discovered ${discovery}.`;
+  }
+  if(this.discoveries.length === 2){
+    return `I discovered ${this.discoveries[0]} and ${this.discoveries[1]}.`
+  }
+  var statement = 'I discovered ';
+  for(var i = 0; i <= (this.discoveries.length-2); i++){
+
+    statement = statement.concat(this.discoveries[i], ', ');
+
+  }
+
+  statement = statement.concat('and ', this.discoveries[this.discoveries.length-1], '.' );
+
+  return statement;
+}
+
+
+
 /* Step 36
  *
  * Define an ES5 class named "BankAccount" that has properties
