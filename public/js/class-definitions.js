@@ -1430,6 +1430,13 @@ Cookie.prototype.swipedByCookieMonster = function(dayOfTheWeek){
  *
  */
 
+ Meal.prototype.containsJunkFood = function(){
+  if (this.foods.indexOf("chips") !== -1 || this.foods.indexOf("soda") !== -1 || this.foods.indexOf("ice cream") !== -1 || this.foods.indexOf("popcorn") !== -1 || this.foods.indexOf("candy") !== -1) {
+    return true;
+  }
+  return false;
+ }
+
 
  /* Steps 91 to 100
  *
@@ -1444,9 +1451,9 @@ Cookie.prototype.swipedByCookieMonster = function(dayOfTheWeek){
  * and assign the values to each variable below.
  *
  */
-var warmBloodedAnimal;
-var coldBloodedAnimal;
-var notWarmOrColdAnimal;
+var warmBloodedAnimal = new Animal('Bird', 'male').isWarmBlooded();
+var coldBloodedAnimal = new Animal('Fish', 'male').isWarmBlooded();
+var notWarmOrColdAnimal = new Animal('Turtle', 'male').isWarmBlooded();
 
 
 /* Step 92
