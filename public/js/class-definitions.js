@@ -1376,6 +1376,12 @@ Box.prototype.openBox = function(){
  *
  */
 
+House.prototype.isATallStory = function(storiesTooTall){
+  if ( this.stories >= storiesTooTall){
+    return true;
+  }
+  return false;
+}
 
  /* Step 88
  *
@@ -1386,6 +1392,13 @@ Box.prototype.openBox = function(){
  * Return true if isOn is true, false otherwise.
  *
  */
+
+ Lightbulb.prototype.flipSwitch = function(on){
+  if( on === "on" ){
+    this.isOn = true;
+  }
+  return this.isOn;
+ }
 
 
  /* Step 89
