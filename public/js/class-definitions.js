@@ -1482,8 +1482,8 @@ var polygon = new Shape(64).getType();
  * and assign the values to each variable below.
  *
  */
-var openAClosedBox = new Box(false).openBox();
-var closeAnOpenBox = new Box(true).openBox();
+var openAClosedBox = new Box('stuff', false).openBox();
+var closeAnOpenBox = new Box('stuff', true).openBox();
 
 
  /* Step 95
@@ -1532,8 +1532,8 @@ var porchLightsOff = new Lightbulb(false).flipSwitch();
  * and assign the values to each variable below.
  *
  */
-var cookieMonsterPwns;
-var cookieMonsterBlocked;
+var cookieMonsterPwns = new Cookie('chocolate').swipedByCookieMonster('Monday');
+var cookieMonsterBlocked = new Cookie('chocolate').swipedByCookieMonster('Friday');
 
 
  /* Step 100
@@ -1542,5 +1542,5 @@ var cookieMonsterBlocked;
  * and assign the values to each variable below.
  *
  */
-var badForYou;
-var goodForYou;
+var badForYou = new Meal(['chips', 'coke']).containsJunkFood();
+var goodForYou = new Meal(['chicken', 'kale']).containsJunkFood();
