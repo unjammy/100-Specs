@@ -1345,6 +1345,15 @@ Box.prototype.openBox = function(){
  *
  */
 
+ Door.prototype.openClose = function(){
+  if(this.isOpen === false){
+    this.isOpen = true;
+    return true;
+  }
+  this.isOpen = false;
+  return false;
+ }
+
 
 /* Step 86
  *
@@ -1352,6 +1361,10 @@ Box.prototype.openBox = function(){
  * the color and size of the shoe ("Found red shoes of size 7").
  *
  */
+
+ Shoe.prototype.findShoes = function(){
+  return `Found ${this.color} shoes of size ${this.size}`
+ }
 
 
  /* Step 87
