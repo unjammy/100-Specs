@@ -1287,6 +1287,38 @@ Animal.prototype.isWarmBlooded = function(){
  *
  */
 
+Shape.prototype.getType = function(){
+  switch(this.sides){
+    case 3:
+      return "triangle";
+      break;
+       case 4:
+      return "quadrilateral";
+      break;
+       case 5:
+      return "pentagon";
+      break;
+       case 6:
+      return "hexagon";
+      break;
+       case 7:
+      return "heptagon";
+      break;
+       case 8:
+      return "octagon";
+      break;
+       case 9:
+      return "nonagon";
+      break;
+       case 10:
+      return "decagon";
+      break;
+
+    default:
+      return "Could not determine type";
+      break;
+  }
+}
 
 /* Step 84
  *
@@ -1297,6 +1329,13 @@ Animal.prototype.isWarmBlooded = function(){
  *
  */
 
+Box.prototype.openBox = function(){
+  if(this.isOpen === false){
+    this.isOpen = true;
+    return true;
+  }
+  return false;
+}
 
  /* Step 85
  *
