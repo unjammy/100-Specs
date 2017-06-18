@@ -1409,6 +1409,12 @@ House.prototype.isATallStory = function(storiesTooTall){
  *
  */
 
+Cookie.prototype.swipedByCookieMonster = function(dayOfTheWeek){
+  if(this.flavor === 'chocolate' && dayOfTheWeek === 'Monday'){
+    return true;
+  }
+  return false;
+}
 
  /* Step 90
  *
