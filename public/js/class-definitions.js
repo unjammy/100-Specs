@@ -852,6 +852,10 @@ Scientist.prototype.addDiscovery = function(discovery){
  *
  */
 
+var BankAccount = function(balance, owner){
+  this.balance = balance;
+  this.owner = owner;
+}
 
 /* Step 37
  *
@@ -1028,7 +1032,7 @@ Scientist.prototype.addDiscovery = function(discovery){
 class Animal {
   constructor(species, gender){
     this.species = species;
-    this.gender = species;
+    this.gender = gender;
   }
 }
 
@@ -1147,6 +1151,12 @@ class Lightbulb {
  * @param {string} flavor The cookie's flavor
  */
 
+ class Cookie {
+  constructor(flavor){
+    this.flavor = flavor;
+  }
+}
+
 
 /**
  * Step 59
@@ -1155,6 +1165,11 @@ class Lightbulb {
  * @param {Array} foods All the foods in the meal
  */
 
+class Meal {
+  constructor(foods){
+    this.foods = foods;
+  }
+}
 
 /**
  * Create a new instance of the Classes you defined above, below!
@@ -1163,12 +1178,12 @@ class Lightbulb {
 
 
 // Create 2 different species of animals
-var george;
-var nemo;
+var george = new Animal('Monkey', 'male');
+var nemo = new Animal('Fish', 'male');
 
 // Create 2 different vehicles
-var civic;
-var forte;
+var civic = new Vehicle('Honda', 'Civic');
+var forte = new Vehicle('KIA', 'Forte');
 
 // Create 2 shapes with different numbers of sides
 var square;
