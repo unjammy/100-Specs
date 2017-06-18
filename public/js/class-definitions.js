@@ -1462,8 +1462,8 @@ var notWarmOrColdAnimal = new Animal('Turtle', 'male').isWarmBlooded();
  * and assign the values to each variable below.
  *
  */
-var streetDriving;
-var forwardDriving;
+var streetDriving = new Vehicle('Toyota', 'Sienna').drive('Las Vegas Blvd');
+var forwardDriving = new Vehicle('Toyota', 'Sienna').drive();
 
 
  /* Step 93
@@ -1472,8 +1472,8 @@ var forwardDriving;
  * and assign the values to each variable below.
  *
  */
-var decagon;
-var polygon;
+var decagon = new Shape(10).getType();
+var polygon = new Shape(64).getType();
 
 
 /* Step 94
@@ -1482,8 +1482,8 @@ var polygon;
  * and assign the values to each variable below.
  *
  */
-var openAClosedBox;
-var closeAnOpenBox;
+var openAClosedBox = new Box(false).openBox();
+var closeAnOpenBox = new Box(true).openBox();
 
 
  /* Step 95
@@ -1492,8 +1492,8 @@ var closeAnOpenBox;
  * and assign the values to each variable below.
  *
  */
-var openAClosedDoor;
-var closeAnOpenDoor;
+var openAClosedDoor = new Door(false).openClose();
+var closeAnOpenDoor = new Door(true).openClose();
 
 
 /* Step 96
@@ -1502,8 +1502,8 @@ var closeAnOpenDoor;
  * and assign the values to each variable below.
  *
  */
-var redShoesSize7;
-var blackShoesSize10;
+var redShoesSize7 = new Shoe( 7, 'red').findShoes();
+var blackShoesSize10 = new Shoe(10, 'black').findShoes();
 
 
  /* Step 97
@@ -1512,8 +1512,8 @@ var blackShoesSize10;
  * and assign the values to each variable below.
  *
  */
-var farTooTallAStory;
-var shortStory;
+var farTooTallAStory = new House(9).isATallStory(7);
+var shortStory = new House(9).isATallStory(10);
 
 
  /* Step 98
@@ -1522,8 +1522,8 @@ var shortStory;
  * and assign the values to each variable below.
  *
  */
-var kitchenLightsOn;
-var porchLightsOff;
+var kitchenLightsOn = new Lightbulb(true).flipSwitch();
+var porchLightsOff = new Lightbulb(false).flipSwitch();
 
 
  /* Step 99
