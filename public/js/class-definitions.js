@@ -1025,6 +1025,12 @@ Scientist.prototype.addDiscovery = function(discovery){
  * @param {string} gender  male or female
  */
 
+class Animal {
+  constructor(species, gender){
+    this.species = species;
+    this.gender = species;
+  }
+}
 
 /**
  * Step 51
@@ -1034,6 +1040,12 @@ Scientist.prototype.addDiscovery = function(discovery){
  * @param {string} model The vehicle's model
  */
 
+class Vehicle {
+  constructor(make, model){
+    this.make = make;
+    this.model = model;
+  }
+}
 
 /**
  * Step 52
@@ -1044,6 +1056,16 @@ Scientist.prototype.addDiscovery = function(discovery){
  * value of the sides property to null.
  *
  */
+
+ class Shape {
+  constructor(sides){
+    if(sides > 2){
+      this.sides = sides;
+    } else {
+      this.sides = null;
+    }
+  }
+ }
 
 
 /**
