@@ -45,7 +45,7 @@ var videogame_system = "Atari";
  *
  */
 
-var galilean_moons = ['io', 'europa', 'ganymede', 'callisto']
+var galilean_moons = ['io', 'europa', 'ganymede', 'callisto'];
 
 
 /* Step 6 φ
@@ -55,7 +55,7 @@ var galilean_moons = ['io', 'europa', 'ganymede', 'callisto']
  *
  */
 
- var golden_ratio = 1.61803398874
+ var golden_ratio = 1.61803398874;
 
 
 /* Step 7
@@ -64,7 +64,7 @@ var galilean_moons = ['io', 'europa', 'ganymede', 'callisto']
  * and assign the value of earths_water_composition to 0.71
  *
  */
- var earths_water_composition= 0.71
+ var earths_water_composition= 0.71;
 
 
 /* Step 8
@@ -74,7 +74,7 @@ var galilean_moons = ['io', 'europa', 'ganymede', 'callisto']
  *
  */
 
- var club_name = "Fight Club"
+ var club_name = "Fight Club";
 
 
 /* Step 9
@@ -87,7 +87,7 @@ var galilean_moons = ['io', 'europa', 'ganymede', 'callisto']
  *   unknown => undefined
  */
 
-var gender = {female: "female", male: "male", unknown: undefined}
+var gender = {female: "female", male: "male", unknown: undefined};
 
 /* Step 10
  *
@@ -102,7 +102,7 @@ var gender = {female: "female", male: "male", unknown: undefined}
  *
  */
 
-var princess_leia = { name: "Leia Organa", money: "890", age: 20, gender: gender.female}
+var princess_leia = { name: "Leia Organa", money: "890", age: 20, gender: gender.female};
 
 /* Step 11
  *
@@ -122,7 +122,7 @@ var princess_leia = { name: "Leia Organa", money: "890", age: 20, gender: gender
   'slumlordhosting.com': "198.61.179.126",
   'jsonformatter.curiousconcept.com': "104.28.5.70"
 
-  }
+  };
 
 
 /* Step 12
@@ -147,7 +147,7 @@ var browsers = {
   Firefox: "mozilla.org",
   Sleipnir: "fenrir-inc.com",
   Konqueror: "konqueror.org"
-}
+};
 
 /* Step 13
  *
@@ -177,7 +177,7 @@ var browsers = {
     violet: "#A915ED"
   },
   isDouble: true
- }
+ };
 
 
 /* Step 14
@@ -200,7 +200,7 @@ var linuxFlavors = ["Gentoo",
   "Slackware",
   "Red Hat",
   "Bieber Linux"
-  ]
+  ];
 
 /* Step 15
  *
@@ -222,7 +222,7 @@ var DNA = [
   "adenine",
   "thymine",
   "cytosine"
-]
+];
 
 /* Step 16
  *
@@ -239,9 +239,9 @@ var DNA = [
  laptopCosts = {
    MacBook  :1500,
    Alienware   : 2500,
-  HP      : 499,
- Surface    :320
- }
+   HP      : 499,
+   Surface    :320
+ };
 
 
 /* Step 17
@@ -267,7 +267,7 @@ var livingOrganismClassification = [
   "Family",
   "Genus",
   "Species"
-]
+];
 
 /* Step 18
  *
@@ -288,7 +288,7 @@ var scmList = [
   "mercurial",
   "bazaar",
   "cvs"
-]
+];
 
 /* Step 19
  *
@@ -309,18 +309,14 @@ var scmList = [
  */
 
  var beers = {
-  IPA         :"Ale",
-  Lager      : "Strong",
-  Heffeweisen :"German",
-  Stout    : [
-                   "Thick",
-                   "Dark"],
-  Porter   : "Bitter",
-  Ale       : [
-                   "Light",
-                   "Golden"]
+  IPA: "Ale",
+  Lager: "Strong",
+  Heffeweisen: "German",
+  Stout: ["Thick", "Dark"],
+  Porter: "Bitter",
+  Ale: ["Light", "Golden"]
 
- }
+ };
 
 
 /* Step 20
@@ -332,7 +328,7 @@ var scmList = [
  *
  */
 
-var sahara_river = function(){return 'Nile River'}
+var sahara_river = function(){return 'Nile River';};
 
 /* Step 21
  *
@@ -347,7 +343,7 @@ var sahara_river = function(){return 'Nile River'}
 
 var addNumbers = function(number1, number2){
   return number1 + number2;
-}
+};
 
 /* Step 22
  *
@@ -366,7 +362,7 @@ var addNumbers = function(number1, number2){
     return true;
   }
   return false;
- }
+ };
 
 
 /* Step 23
@@ -395,7 +391,7 @@ var addNumbers = function(number1, number2){
     return `This ${beer} is ${beers[beer]}.`;
   }
   return false;
- }
+ };
 
 
 /* Step 24
@@ -416,7 +412,7 @@ var addNumbers = function(number1, number2){
     return `${browsers[browser]}`;
   }
   return false;
- }
+ };
 /* Step 25
  *
  * Define a function named "listLivingOrgClass" that
@@ -439,7 +435,7 @@ var addNumbers = function(number1, number2){
   <li>Species</li>
 </ul>`;
 
- }
+ };
 
 
 /* Step 26
@@ -465,13 +461,13 @@ var addNumbers = function(number1, number2){
 var favoritePlanet = function(planet){
 
     if(planets.indexOf(planet) !== -1 ){
-      var randomPlanet = Math.floor(Math.random() * planets.length)
-      randomPlanet = planets[randomPlanet]
+      var randomPlanet = Math.floor(Math.random() * planets.length);
+      randomPlanet = planets[randomPlanet];
 
      return `I'm from ${planets[planets.indexOf(planet)]}, but I wish I could go to ${randomPlanet}.`;
    }
   return `${planet} is not a planet!`;
-}
+};
 
 /* Step 27
  *
@@ -498,18 +494,19 @@ var favoritePlanet = function(planet){
 
 var Person = function(name, money, age, gender) {
 
-    this.name = name;
-    this.money = money;
-    this.age = age;
+  this.name = name;
+  this.money = money;
+  this.age = age;
   this.gender = gender;
   };
+
   Person.prototype.spendMoney = function(money){
     this.money = this.money - money;
-  }
-  Person.prototype.earnMoney = function(money){
-        this.money = this.money + money;
+  };
 
-  }
+  Person.prototype.earnMoney = function(money){
+    this.money = this.money + money;
+  };
 
 
 /* Step 28
@@ -530,7 +527,7 @@ var Person = function(name, money, age, gender) {
   } else {
     return -1;
   }
- }
+ };
 
 
 /* Step 29
@@ -550,7 +547,7 @@ var Person = function(name, money, age, gender) {
     return false;
   }
   return true;
- }
+ };
 
 
 /* Step 30
@@ -578,11 +575,11 @@ var Person = function(name, money, age, gender) {
 
   this.color = color;
 
- }
+ };
 
 Pen.prototype.write = function(message){
     return `${this.color}: ${message}`
-  }
+  };
 
 /* Step 31
  *
@@ -614,11 +611,11 @@ Pen.prototype.write = function(message){
 var Garden = function(plants){
   this.plantsTotal = plants;
   this.isWatered = false;
-}
+};
 
 Garden.prototype.water = function(){
   this.isWatered = true;
-}
+};
 
 Garden.prototype.grow = function(){
   if(this.isWatered){
@@ -626,7 +623,7 @@ Garden.prototype.grow = function(){
   this.isWatered = false;
   }
   return false;
-}
+};
 
 /* Step 32
  *
@@ -647,15 +644,15 @@ Garden.prototype.grow = function(){
 
 var SolarSystem = function(){
   this.planets = [];
-}
+};
 
 SolarSystem.prototype.addPlanet = function(planet){
   this.planets.push(planet);
-}
+};
 
 SolarSystem.prototype.removePlanet = function(){
   this.planets.pop();
-}
+};
 
 /* Step 33
  *
@@ -694,19 +691,19 @@ var PrincessLeia = function(name, money, age, gender){
 
 this.isInTrouble = null;
   Person.call(this, name, money, age, gender);
-}
+};
 
 PrincessLeia.prototype = Object.create(new Person);
 
 PrincessLeia.prototype.shootsGun = function(){
   this.isInTrouble = false;
   return "Leia shoots her gun wildly";
-}
+};
 
 PrincessLeia.prototype.getsInTrouble = function(){
   this.isInTrouble = true;
   return "Help me Obi-wan Kenobi, you're my only hope";
-}
+};
 
 PrincessLeia.prototype.marries = function(person){
   if(person === 'Han Solo'){
@@ -715,7 +712,7 @@ PrincessLeia.prototype.marries = function(person){
     return 'Gross!';
   }
   return false;
-}
+};
 
 /* Step 34
  *
@@ -740,7 +737,7 @@ PrincessLeia.prototype.marries = function(person){
   this.color = color;
   this.maxPapers = papers;
 
- }
+ };
 
 Stapler.prototype.staplePapers = function(number){
 
@@ -748,7 +745,7 @@ Stapler.prototype.staplePapers = function(number){
     return false;
   }
   return true;
-}
+};
 /* Step 35
  *
  * Define an ES5 class named "Scientist" that extends the Person Class that takes
@@ -795,19 +792,21 @@ var Scientist = function(name, money,  age, gender){
   this.discoveries = [];
   Person.call(this, name, money, age, gender);
 
-}
+};
 
 Scientist.prototype = Object.create(new Person);
 Scientist.prototype.addDiscipline = function(discipline){
   this.disciplines.push(discipline);
   return discipline;
-}
+};
+
 Scientist.prototype.checkDiscipline = function(discipline){
   if( this.disciplines.indexOf(discipline) === -1 ){
     return false;
   }
   return true;
-}
+};
+
 Scientist.prototype.addDiscovery = function(discovery){
 
   this.discoveries.push(discovery);
@@ -827,7 +826,7 @@ Scientist.prototype.addDiscovery = function(discovery){
   statement = statement.concat('and ', this.discoveries[this.discoveries.length-1], '.' );
 
   return statement;
-}
+};
 
 
 
@@ -855,7 +854,7 @@ Scientist.prototype.addDiscovery = function(discovery){
 var BankAccount = function(balance, owner){
   this.balance = balance;
   this.owner = owner;
-}
+};
 
 /* Step 37
  *
@@ -1251,7 +1250,7 @@ Animal.prototype.isWarmBlooded = function(){
   } else {
     return "Could not determine if warm-blooded";
   }
-}
+};
 
 /* Step 82
  *
@@ -1266,7 +1265,7 @@ Animal.prototype.isWarmBlooded = function(){
     return `Driving on ${streetName}`;
   }
   return 'Driving forward';
- }
+ };
 
 
  /* Step 83
@@ -1318,7 +1317,7 @@ Shape.prototype.getType = function(){
       return "Could not determine type";
       break;
   }
-}
+};
 
 /* Step 84
  *
@@ -1335,7 +1334,7 @@ Box.prototype.openBox = function(){
     return true;
   }
   return false;
-}
+};
 
  /* Step 85
  *
@@ -1352,7 +1351,7 @@ Box.prototype.openBox = function(){
   }
   this.isOpen = false;
   return false;
- }
+ };
 
 
 /* Step 86
@@ -1364,7 +1363,7 @@ Box.prototype.openBox = function(){
 
  Shoe.prototype.findShoes = function(){
   return `Found ${this.color} shoes of size ${this.size}`
- }
+ };
 
 
  /* Step 87
@@ -1381,7 +1380,7 @@ House.prototype.isATallStory = function(storiesTooTall){
     return true;
   }
   return false;
-}
+};
 
  /* Step 88
  *
@@ -1398,7 +1397,7 @@ House.prototype.isATallStory = function(storiesTooTall){
     this.isOn = true;
   }
   return this.isOn;
- }
+ };
 
 
  /* Step 89
@@ -1414,7 +1413,7 @@ Cookie.prototype.swipedByCookieMonster = function(dayOfTheWeek){
     return true;
   }
   return false;
-}
+};
 
  /* Step 90
  *
@@ -1435,7 +1434,7 @@ Cookie.prototype.swipedByCookieMonster = function(dayOfTheWeek){
     return true;
   }
   return false;
- }
+ };
 
 
  /* Steps 91 to 100
